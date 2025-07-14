@@ -6,7 +6,7 @@ YatraMate is a real-time smart travel advisor that guides users on the best time
 
 ## 🔗 Live Demo
 
-Clink ([or add your deployment link here](https://yatra-mate-smart-commute-assistant-gamma.vercel.app/))
+ ([deployment link here](https://yatra-mate-smart-commute-assistant-gamma.vercel.app/))
 
 ---
 
