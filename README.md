@@ -6,7 +6,7 @@ YatraMate is a real-time smart travel advisor that guides users on the best time
 
 ## 🔗 Live Demo
 
-Coming soon... ([or add your deployment link here](https://yatra-mate-smart-commute-assistant-gamma.vercel.app/))
+Clink ([or add your deployment link here](https://yatra-mate-smart-commute-assistant-gamma.vercel.app/))
 
 ---
 
@@ -76,8 +76,9 @@ Coming soon... ([or add your deployment link here](https://yatra-mate-smart-comm
 
 1. **Clone the repo:**
    ```bash
-   git clone https://github.com/yourusername/yatramate.git
-   cd yatramate
+   [git clone https://github.com/yourusername/yatramate.git](https://github.com/surajbhan93/YatraMate-Smart-Commute-Assistant.git)
+   cd YatraMate-Smart-Commute-Assistant
+   npm start
 
 
 
