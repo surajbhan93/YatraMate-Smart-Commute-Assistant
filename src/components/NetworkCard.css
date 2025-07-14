@@ -1,0 +1,77 @@
+.network-card {
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.network-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: #0077b6;
+}
+
+.network-card .status {
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 8px;
+  display: inline-block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Status colors */
+.status.good {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+.status.medium {
+  background-color: #fef9c3;
+  color: #92400e;
+}
+.status.poor {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+.status.detecting {
+  background-color: #e0e0e0;
+  color: #555;
+}
+.status.unknown {
+  background-color: #f3f4f6;
+  color: #333;
+}
+.timestamp {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 8px;
+}
+
+/* Pulse loader while detecting */
+.pulse-loader {
+  margin-top: 10px;
+  width: 16px;
+  height: 16px;
+  background: #0ea5e9;
+  border-radius: 50%;
+  animation: pulse 1.2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.5); opacity: 0.3; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
