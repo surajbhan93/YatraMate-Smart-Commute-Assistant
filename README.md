@@ -1,3 +1,86 @@
+# 🧭 YatraMate – Smart Commute Assistant
+
+YatraMate is a real-time smart travel advisor that guides users on the best time to commute based on **live location**, **network strength**, and **weather conditions**. Built using modern Web APIs and React.js, it’s optimized for both user experience and functionality.
+
+---
+
+## 🔗 Live Demo
+
+Coming soon... ([or add your deployment link here](https://yatra-mate-smart-commute-assistant-gamma.vercel.app/))
+
+---
+
+## 📸 Screenshots
+
+| Light Mode | Dark Mode |
+|---------<img width="1901" height="863" alt="Screenshot 2025-07-14 202956" src="https://github.com/user-attachments/assets/aa51960f-943e-4ac6-8924-d95a1d08ca78" />
+---|-----------|
+<img width="1796" height="857" alt="Screenshot 2025-07-14 202940" src="https://github.com/user-attachments/assets/bd27a17c-8d08-456f-b634-f5e1cc773e7a" />
+    ---|
+
+## ✨ Features
+
+- 📍 **Live Location Detection** via `Geolocation API`
+- 🌐 **Network Strength Analysis** via `Network Information API`
+- 🌦 **Live Weather Forecasting** using `OpenWeatherMap API`
+- 🔄 **Smart Background Tasks** with `setInterval` logic
+- 📬 **Instant Travel Suggestions** (ideal or avoid travel)
+- 🎨 **Dark/Light Mode Toggle**
+- 🕒 **Last Refreshed Time** and ✅ **Toast Notification**
+- 💾 **Saves Last Known Location** to `localStorage`
+- 📍 **Reverse Geocoding** using OpenStreetMap API (via CORS proxy)
+
+---
+
+## 🚀 Tech Stack
+
+- **Frontend:** React.js, JavaScript, CSS (with Tailwind or vanilla)
+- **APIs Used:**
+  - [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API)
+  - [Network Information API](https://developer.mozilla.org/en-US/docs/Web/API/Network_Information_API)
+  - [Background Tasks (setInterval)](https://developer.mozilla.org/en-US/docs/Web/API/setInterval)
+  - [OpenWeatherMap API](https://openweathermap.org/api)
+  - [Nominatim API](https://nominatim.org/release-docs/develop/api/Reverse/)
+
+---
+
+## 🧠 Logic Summary
+
+- If **Network = 4G** and **Time between 6 AM to 10 PM** ➤ Suggest "✅ Good time to leave!"
+- If **Network = 2G** ➤ Warn "❌ Poor network"
+- If **Weather = Rain/Thunderstorm** ➤ Suggest "⚠️ Avoid travel"
+- Else ➤ Suggest "⚠️ Conditions not ideal"
+
+---
+
+## 📂 Folder Structure
+  smart-commute-assistant/
+├── public/
+├── src/
+│ ├── components/
+│ │ ├── LocationCard.jsx
+│ │ ├── NetworkCard.jsx
+│ │ └── SuggestionCard.jsx
+│ ├── utils/
+│ │ ├── useBackgroundTasks.js
+│ │ └── getWeather.js
+│ ├── App.js
+│ └── App.css
+├── package.json
+└── README.md
+
+
+---
+
+## 🛠️ Setup Instructions
+
+1. **Clone the repo:**
+   ```bash
+   git clone https://github.com/yourusername/yatramate.git
+   cd yatramate
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
